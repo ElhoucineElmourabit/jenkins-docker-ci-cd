@@ -53,9 +53,9 @@
         <h1
           class="text-4xl font-bold tracking-widest text-accent-text uppercase"
         >
-          SYSTEM :: OFFLINE
+          SYSTEM :: ONLINE
         </h1>
-        <p class="mt-2 text-sm text-white">DEPLOYMENT STATUS 503.</p>
+        <p class="mt-2 text-sm text-white">DEPLOYMENT STATUS 200.</p>
       </header>
 
       <main class="mb-16">
@@ -95,10 +95,12 @@
           FULL LOG DUMP
         </h3>
         <pre class="text-xs text-white mb-5 leading-normal overflow-auto h-32">
-[INFO] SYSTEM BOOT SEQUENCE COMPLETE
-[INFO] ENV_ID: ELHOUCINE_ENV
-[INFO] PROCESS_PID:: NGINX ACTIVE
-[INFO] PROCESS_PID:: DOCKER ACTIVE
+[INFO] PUSH TO REGISTRY SUCCESS.
+[INFO] CONTAINER STOP INITIATED.
+[WARN] OLD CONTAINER TERMINATED.
+[INFO] NEW CONTAINER STARTED.
+[INFO] HEALTHCHECK PASSED.
+[SUCCESS] DELIVERY COMPLETE.
             </pre
         >
         <button
@@ -135,7 +137,7 @@
         "",
         "> STEP 5 :: VALIDATE CI/CD PIPELINE",
         "",
-        "> COMPLETE :: STATUS 503 SERVICE UNAVAILABLE",
+        "> COMPLETE :: STATUS 200 OK",
       ];
 
       const log = document.getElementById("log");
