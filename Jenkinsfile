@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/ElhoucineElmourabit/jenkins-docker-ci-cd'
+                git branch: 'main', url: 'https://github.com/ElhoucineElmourabit/jenkins-docker-ci-cd'
             }
         }
 
@@ -47,4 +47,5 @@ pipeline {
             }
         }
     }
+
 }
